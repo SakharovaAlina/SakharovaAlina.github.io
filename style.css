@@ -1,0 +1,55 @@
+body{background: url(images/best-casinos-games.jpg); margin:0;padding: 0; 
+font: 16px/24px Arial,Tahoma,sans-serif; color: #272727; }
+a{text-decoration: none;}
+
+/* Structure of the site*/
+div.mid { width: 1000px; margin: 0 auto;}
+div.header{ background: #10034e;}
+div.footer{margin: 20px 0; text-align: center;text-transform: uppercase;}
+
+/* header */
+div.topmenu{float: right; height: 70px; line-height: 70 px; font: 16px/24px Arial,Tahoma,sans-serif;}
+div.topmenu a{margin:0 0 0 10px; color: #0eb3e6;}
+div.topmenu a:hover{color:#fff;transition: all 0.5s;}
+
+/*main menu*/
+div.menu{background: rgba(245, 86, 86, 0.801); border: 1px solid rgb(99, 28, 28); border-left:none ;border-right: none;}
+div.menu ul{margin: 0;padding: 0;list-style:none;text-align: center ;}
+div.menu ul li{display: inline-block; margin: 5px 50px}
+div.menu ul li a{color: #fff;text-transform: uppercase;text-shadow: 1px 1px 3px #0b4455;}
+div.menu ul li a:hover{color: #f3a3a3;transition: all 0.5s;}
+
+/*content*/
+div.fon {background: rgba(245, 86, 86, 0.801);border: 1px solid #ccc;border-top: none;padding: 40px;}
+div.block{width: 440px;float: left;margin-bottom: 40px;}
+div.block:nth-of-type(even){float: right;}
+div.block a p {color: #272727;}
+div.anons{background: #f5f5f5;border: 1px solid #ccc;border-radius: 3px;padding: 20px;}
+div.anons:hover {background: #f4e0e2; border: 1 px solid #ddbfbf;transition: all 1s; }
+div.anons img {box-shadow: 1px 1px 5px #777;}
+div.anons:hover img {transform: scale(1.15) rotate(2deg); transition: transform 0.5s;}
+div.block:nth-of-type(even) div.anons:hover img {transform: scale(1.15) rotate(-2deg);}
+div.anons h3 {font-size: 20px;font-weight: normal; margin: 20px 0 10px;color: rgb(99, 28, 28); line-height: 20px;}
+div.anons p {text-shadow: 1px 1px 0 #fff;  }
+
+/*footer*/
+div.footer span {color: #fff; margin: 0 20px;}
+
+div.clear {clear: both;}
+
+/*Adapt design*/
+@media screen and (max-width: 1000px){
+    div.mid{width: 95%;}
+    div.block{width: 48%;}
+    div.anons img {width: 100%;}
+    div.anons h3 {font-size: 18px;}
+}  
+@media screen and (max-width: 640px){
+    div.header{ text-align: center; background-position: center -130px;}
+    div.topmenu, div.block, div.block:nth-of-type(even){ float:none;}
+    div.block{ width: auto; margin-bottom: 40px;}
+    div.block:nth-last-of-type(2){margin-bottom: 0 ;}
+    div.footer span {margin: 10px 0; display: block;}
+
+
+}  
